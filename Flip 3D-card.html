@@ -6,15 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="Flip 3D-card.css" rel="stylesheet">
     <script src="add_backgr.js"></script>
-    <title>Document</title>
+    <script src="add_text.js"></script>
+    <title>Flip-card</title>
 </head>
 <body>
     <div class = "wrap">
-        <div><input type="file" accept="image/*" id="bck_1"></div>
-        <div><input type="file" accept="image/*" id="bck_2"></div>
+        <div>
+            <p>front pic</p> <input type="file" accept="image/*" id="bck_1">
+            <p>back pic</p> <input type="file" accept="image/*" id="bck_2">
+        </div>
+        <div> 
+            <p>front text</p> <input type="text" id="front_text_field"> <button onclick="send_front_text()">send</button>
+            <p>back text</p> <input type="text" id="back_text_field"> <button onclick="send_back_text()">send</button>
+        </div>
         <div class = "card">
-            <div class = "front"> Front </div>
-            <div class = "back"> Black </div>   
+            <div class = "front"> <p id="text_front">Front</p> </div>
+            <div class = "back"> <p id="text_back">Black</p> </div>   
         </div> 
     </div> 
 </body>
