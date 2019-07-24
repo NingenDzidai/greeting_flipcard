@@ -2,6 +2,11 @@ body {
     font-family: sans-serif;
 }
 
+button {
+    height: 20px;
+    width: 50px;
+}
+
 .wrap {
     position: absolute;
     width: 100%;
@@ -45,7 +50,7 @@ body {
 .back{
     background: black;
     color: white;
-    background-size: 200px 300px; 
+    background-size: cover; 
     transform: rotateY(180deg);
 }
 

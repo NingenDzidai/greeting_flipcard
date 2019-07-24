@@ -11,6 +11,10 @@
 </head>
 <body>
     <div class = "wrap">
+        <div class = "card">
+            <div class = "front"> <p id="FrontText">Front</p> </div>
+            <div class = "back"> <p id="BackText">Black</p> </div>   
+        </div> 
         <div>
             <p>front pic</p> <input type="file" accept="image/*" id="bck_1">
             <p>back pic</p> <input type="file" accept="image/*" id="bck_2">
@@ -19,10 +23,21 @@
             <p>front text</p> <input type="text" id="front_text_field"> <button onclick="send_front_text()">send</button>
             <p>back text</p> <input type="text" id="back_text_field"> <button onclick="send_back_text()">send</button>
         </div>
-        <div class = "card">
-            <div class = "front"> <p id="text_front">Front</p> </div>
-            <div class = "back"> <p id="text_back">Black</p> </div>   
-        </div> 
+        <div>
+            <p>цвет спереди(x16 или название)</p> 
+            <input type="text" id="ColorTextFront"> 
+            <button id = "FrontColorBtn">send</button>
+            <p>цвет сзади(x16 или название)</p> 
+            <input type="text" id="ColorTextBack"> 
+            <button id = "BackColorBtn">send</button>
+        </div>
+        <div> 
+            <p>высота</p> <input type="text" id="HeightField"> <button id="HeightBtn">send</button>
+            <p>ширина</p> <input type="text" id="WidthField"> <button id="WidthBtn">send</button>
+        </div>
     </div> 
+    <script src="add_text.js" async></script>
+    <script src="add_color.js" async></script>
+    <script src = "size.js" async></script>
 </body>
 </html>
